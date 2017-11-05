@@ -9,7 +9,72 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
+
+@*Shoes Row One*@
+
+<h2>Shoes</h2>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        if (item.ShoesID >= 1 && item.ShoesID <= 6)
+        {
+            <div class="col-sm-4 col-md-2">
+                <div class="thumbnail">
+                    <img src=@Url.Content(item.Photo.Photo1)> @*set alts in id fields?*@
+                    <div class="caption">
+                        <p>@Html.ActionLink("Details", "Details", new { id = item.ShoesID }, new { @class = "btn btn-primary", role = "button" })</p>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>
+
+@*Shoes Row Two*@
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        if (item.ShoesID >= 7 && item.ShoesID <= 8)
+        {
+            <div class="col-sm-4 col-md-2">
+                <div class="thumbnail">
+                    <img src=@Url.Content(item.Photo.Photo1)> @*set alts in id fields?*@
+                    <div class="caption">
+                        <p>@Html.ActionLink("Details", "Details", new { id = item.ShoesID }, new { @class = "btn btn-primary", role = "button" })</p>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>
+
+Boots Row One
+
+<h2>Boots</h2>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        if (item.ShoesID >= 9 && item.ShoesID <= 10)
+        {
+            <div class="col-sm-4 col-md-2">
+                <div class="thumbnail">
+                    <img src=@Url.Content(item.Photo.Photo1)> @*set alts in id fields?*@
+                    <div class="caption">
+                        <p>@Html.ActionLink("Details", "Details", new { id = item.ShoesID }, new { @class = "btn btn-primary", role = "button" })</p>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>
+
+
+
+
+@*<table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Name)
@@ -60,4 +125,4 @@
     </tr>
 }
 
-</table>
+</table>*@

@@ -9,7 +9,79 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
+
+@*Watches Row One*@
+
+<h2>Watches</h2>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        if (item.AccessoriesID >= 1 && item.AccessoriesID <= 2)
+        {
+            <div class="col-sm-4 col-md-2">
+                <div class="thumbnail">
+                    <img src=@Url.Content(item.Photo.Photo1)> @*set alts in id fields?*@
+                    <div class="caption">
+                        <p>@Html.ActionLink("Details", "Details", new { id = item.AccessoriesID }, new { @class = "btn btn-primary", role = "button" })</p>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>
+
+@*Hats Row One*@
+
+<h2>Hats</h2>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        if (item.AccessoriesID >= 3 && item.AccessoriesID <= 6)
+        {
+            <div class="col-sm-4 col-md-2">
+                <div class="thumbnail">
+                    <img src=@Url.Content(item.Photo.Photo1)> @*set alts in id fields?*@
+                    <div class="caption">
+                        <p>@Html.ActionLink("Details", "Details", new { id = item.AccessoriesID }, new { @class = "btn btn-primary", role = "button" })</p>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>
+
+Sunglasses Row One
+
+<h2>Sunglasses</h2>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        if (item.AccessoriesID >= 7 && item.AccessoriesID <= 8)
+        {
+            <div class="col-sm-4 col-md-2">
+                <div class="thumbnail">
+                    <img src=@Url.Content(item.Photo.Photo1)> @*set alts in id fields?*@
+                    <div class="caption">
+                        <p>@Html.ActionLink("Details", "Details", new { id = item.AccessoriesID }, new { @class = "btn btn-primary", role = "button" })</p>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>
+
+
+
+
+
+
+
+
+
+@*<table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Name)
@@ -60,4 +132,4 @@
     </tr>
 }
 
-</table>
+</table>*@
