@@ -14,7 +14,9 @@
 <div class="row">
 @foreach (var item in Model)
 {
-    <div class="col-sm-6 col-md-4">
+    //if (item.TopsID >= 1 && item.TopsID <= 5)
+    //{
+    <div class="col-sm-4 col-md-2">
         <div class="thumbnail">
             <img src=@Url.Content(item.Photo.Photo1)> @*set alts in id fields?*@
             <div class="caption">
@@ -30,10 +32,18 @@
             </div>
         </div>
     </div>
+    @*}*@
 
 
-}
-</div>
+    
+        
+
+
+
+
+
+    }    @*SET UP NEW ROW HERE FOR SWEATERS, THEN ONE FOR SUITS?? OR SHOULD I USE SECTIONS???*@
+</div>   
 
 
 
