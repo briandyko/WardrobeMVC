@@ -10,12 +10,13 @@
     @Html.ActionLink("Create New", "Create")
 </p>
 
+@*Tshirts Row 1*@
 
 <div class="row">
 @foreach (var item in Model)
 {
-    //if (item.TopsID >= 1 && item.TopsID <= 5)
-    //{
+    if (item.TopsID >= 1 && item.TopsID <= 6)
+    {
     <div class="col-sm-4 col-md-2">
         <div class="thumbnail">
             <img src=@Url.Content(item.Photo.Photo1)> @*set alts in id fields?*@
@@ -32,21 +33,122 @@
             </div>
         </div>
     </div>
-    @*}*@
+    }
+}
+    </div>
+
+@*TShirts Row 2*@
 
 
-    
-        
+<div class="row">
+    @foreach (var item in Model)
+    {
 
+        if (item.TopsID >= 7 && item.TopsID <= 9)
+        {
+            <div class="col-sm-4 col-md-2">
+                <div class="thumbnail">
+                    <img src=@Url.Content(item.Photo.Photo1)> @*set alts in id fields?*@
+                    <div class="caption">
+                        <h3>@Html.DisplayNameFor(model => model.Name) : @Html.DisplayFor(modelItem => item.Name)</h3>
+                        <p>...</p>
+                        <p>@Html.ActionLink("Details", "Details", new { id = item.TopsID }, new { @class = "btn btn-primary", role = "button" })</p>
+                        <p>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.TopsID }) |
+                            @*@Html.ActionLink("Details", "Details", new { id = item.TopsID }) |*@
+                            @Html.ActionLink("Delete", "Delete", new { id = item.TopsID })
+                        </p>
+                        @*<p>@Html.ActionLink("Details", "Details", new { id = item.ReviewID }, new { @class = "btn btn-primary", role = "button" })</p>*@
+                    </div>
+                </div>
+            </div>
+        }
+    } 
+</div>
 
+@*Sweaters Row One*@  
 
+<div class="row">
+    @foreach (var item in Model)
+    {
 
+        if (item.TopsID >= 10 && item.TopsID <= 15)
+        {
+            <div class="col-sm-4 col-md-2">
+                <div class="thumbnail">
+                    <img src=@Url.Content(item.Photo.Photo1)> @*set alts in id fields?*@
+                    <div class="caption">
+                        <h3>@Html.DisplayNameFor(model => model.Name) : @Html.DisplayFor(modelItem => item.Name)</h3>
+                        <p>...</p>
+                        <p>@Html.ActionLink("Details", "Details", new { id = item.TopsID }, new { @class = "btn btn-primary", role = "button" })</p>
+                        <p>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.TopsID }) |
+                            @*@Html.ActionLink("Details", "Details", new { id = item.TopsID }) |*@
+                            @Html.ActionLink("Delete", "Delete", new { id = item.TopsID })
+                        </p>
+                        @*<p>@Html.ActionLink("Details", "Details", new { id = item.ReviewID }, new { @class = "btn btn-primary", role = "button" })</p>*@
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>
 
-    }    @*SET UP NEW ROW HERE FOR SWEATERS, THEN ONE FOR SUITS?? OR SHOULD I USE SECTIONS???*@
-</div>   
+@*Sweaters Row 2*@
 
+<div class="row">
+    @foreach (var item in Model)
+    {
 
+        if (item.TopsID >= 16 && item.TopsID <= 18)
+        {
+            <div class="col-sm-4 col-md-2">
+                <div class="thumbnail">
+                    <img src=@Url.Content(item.Photo.Photo1)> @*set alts in id fields?*@
+                    <div class="caption">
+                        <h3>@Html.DisplayNameFor(model => model.Name) : @Html.DisplayFor(modelItem => item.Name)</h3>
+                        <p>...</p>
+                        <p>@Html.ActionLink("Details", "Details", new { id = item.TopsID }, new { @class = "btn btn-primary", role = "button" })</p>
+                        <p>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.TopsID }) |
+                            @*@Html.ActionLink("Details", "Details", new { id = item.TopsID }) |*@
+                            @Html.ActionLink("Delete", "Delete", new { id = item.TopsID })
+                        </p>
+                        @*<p>@Html.ActionLink("Details", "Details", new { id = item.ReviewID }, new { @class = "btn btn-primary", role = "button" })</p>*@
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div> 
 
+@*Suits and Coats Row One*@
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+
+        if (item.TopsID >= 19 && item.TopsID <= 25)
+        {
+            <div class="col-sm-4 col-md-2">
+                <div class="thumbnail">
+                    <img src=@Url.Content(item.Photo.Photo1)> @*set alts in id fields?*@
+                    <div class="caption">
+                        <h3>@Html.DisplayNameFor(model => model.Name) : @Html.DisplayFor(modelItem => item.Name)</h3>
+                        <p>...</p>
+                        <p>@Html.ActionLink("Details", "Details", new { id = item.TopsID }, new { @class = "btn btn-primary", role = "button" })</p>
+                        <p>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.TopsID }) |
+                            @*@Html.ActionLink("Details", "Details", new { id = item.TopsID }) |*@
+                            @Html.ActionLink("Delete", "Delete", new { id = item.TopsID })
+                        </p>
+                        @*<p>@Html.ActionLink("Details", "Details", new { id = item.ReviewID }, new { @class = "btn btn-primary", role = "button" })</p>*@
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div> 
 
 
 
