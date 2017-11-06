@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-image: url('lakeErie.JPG');
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -24,15 +25,19 @@ textarea {
 }
 
 
-
 /*Home Page*/ 
 
 #cleveland {
     background-image: url('cleveland.jpg');
+    color:antiquewhite;
 }
 
 .centerText{
     text-align:center;
+}
+
+#textChange{
+    font-family: 'Satisfy', cursive;
 }
 
 
@@ -67,7 +72,10 @@ div.thumbnail{
 
 .detailsOdd{
     font-family: 'Satisfy', cursive;
+    color:ghostwhite;
 }
+
+/*image resizing*/
 
 .squareReSize{
     width:380px;
@@ -89,6 +97,33 @@ div.thumbnail{
     height:400px;
 }
 
+.thumbnail{
+    background-image: url('lakeErie.JPG');
+}
+
+h1{
+    font-family: 'Architects Daughter', cursive;
+    font-weight:900;
+}
+
+h2{
+    font-family: 'Architects Daughter', cursive;
+    font-weight:bold;
+}
+
+h3{
+
+}
+
+
+footer{
+    color:snow;
+}
+
+#whiteText{
+    color:ghostwhite;
+    font-weight:bolder;
+}
 /*Bottoms*/
 
 img#shiny{
@@ -110,7 +145,6 @@ img#green{
 
 /*Tops Section*/
 
-/*Tops Index*/
 
 
 /*Tops Details*/

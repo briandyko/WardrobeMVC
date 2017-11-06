@@ -4,7 +4,7 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h1>Tops</h1>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -21,7 +21,7 @@
     {
     <div class="col-sm-4 col-md-2">
         <div class="thumbnail">
-            <img src=@Url.Content(item.Photo.Photo1)> @*set alts in id fields?*@
+            <img src=@Url.Content(item.Photo.Photo1)>
             <div class="caption">
                 <p class="detailButton">@Html.ActionLink("Details", "Details", new { id = item.TopsID }, new { @class = "btn btn-primary", role = "button" })</p>
             </div>
@@ -42,7 +42,7 @@
         {
             <div class="col-sm-4 col-md-2">
                 <div class="thumbnail">
-                    <img src=@Url.Content(item.Photo.Photo1)> @*set alts in id fields?*@
+                    <img src=@Url.Content(item.Photo.Photo1)> 
                     <div class="caption">
                         <p class="detailButton">@Html.ActionLink("Details", "Details", new { id = item.TopsID }, new { @class = "btn btn-primary", role = "button" })</p>
                     </div>
@@ -64,7 +64,7 @@
         {
             <div class="col-sm-4 col-md-2">
                 <div class="thumbnail">
-                    <img src=@Url.Content(item.Photo.Photo1)> @*set alts in id fields?*@
+                    <img src=@Url.Content(item.Photo.Photo1)>
                     <div class="caption">
                         <p class="detailButton">@Html.ActionLink("Details", "Details", new { id = item.TopsID }, new { @class = "btn btn-primary", role = "button" })</p>
                     </div>
@@ -84,7 +84,7 @@
         {
             <div class="col-sm-4 col-md-2">
                 <div class="thumbnail">
-                    <img src=@Url.Content(item.Photo.Photo1)> @*set alts in id fields?*@
+                    <img src=@Url.Content(item.Photo.Photo1)>
                     <div class="caption">
                         <p class="detailButton">@Html.ActionLink("Details", "Details", new { id = item.TopsID }, new { @class = "btn btn-primary", role = "button" })</p>
                     </div>
@@ -106,7 +106,7 @@
         {
             <div class="col-sm-4 col-md-2">
                 <div class="thumbnail">
-                    <img src=@Url.Content(item.Photo.Photo1)> @*set alts in id fields?*@
+                    <img src=@Url.Content(item.Photo.Photo1)>
                     <div class="caption">
                         <p class="detailButton">@Html.ActionLink("Details", "Details", new { id = item.TopsID }, new { @class = "btn btn-primary", role = "button" })</p>
                     </div>
@@ -115,59 +115,3 @@
         }
     }
 </div> 
-
-
-
-
-@*<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Type)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Color.Color1)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Occasion.Occasion1)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Photo.Photo1)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Season.Season1)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Type)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Color.Color1)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Occasion.Occasion1)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Photo.Photo1)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Season.Season1)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.TopsID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.TopsID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.TopsID })
-        </td>
-    </tr>
-}
-
-</table>*@
