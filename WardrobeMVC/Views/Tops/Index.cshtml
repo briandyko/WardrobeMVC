@@ -23,12 +23,7 @@
         <div class="thumbnail">
             <img src=@Url.Content(item.Photo.Photo1)> @*set alts in id fields?*@
             <div class="caption">
-                @*<h3>@Html.DisplayNameFor(model => model.Name) : @Html.DisplayFor(modelItem => item.Name)</h3>*@
                 <p>@Html.ActionLink("Details", "Details", new { id = item.TopsID }, new { @class = "btn btn-primary", role = "button" })</p>
-                @*<p>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.TopsID }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.TopsID })
-                </p>*@
             </div>
         </div>
     </div>
@@ -49,12 +44,7 @@
                 <div class="thumbnail">
                     <img src=@Url.Content(item.Photo.Photo1)> @*set alts in id fields?*@
                     <div class="caption">
-                        @*<h3>@Html.DisplayNameFor(model => model.Name) : @Html.DisplayFor(modelItem => item.Name)</h3>*@
                         <p>@Html.ActionLink("Details", "Details", new { id = item.TopsID }, new { @class = "btn btn-primary", role = "button" })</p>
-                        @*<p>
-                            @Html.ActionLink("Edit", "Edit", new { id = item.TopsID })
-                            @Html.ActionLink("Delete", "Delete", new { id = item.TopsID })
-                        </p>*@
                     </div>
                 </div>
             </div>
@@ -76,12 +66,7 @@
                 <div class="thumbnail">
                     <img src=@Url.Content(item.Photo.Photo1)> @*set alts in id fields?*@
                     <div class="caption">
-                        @*<h3>@Html.DisplayNameFor(model => model.Name) : @Html.DisplayFor(modelItem => item.Name)</h3>*@
                         <p>@Html.ActionLink("Details", "Details", new { id = item.TopsID }, new { @class = "btn btn-primary", role = "button" })</p>
-                        @*<p>
-                            @Html.ActionLink("Edit", "Edit", new { id = item.TopsID }) |
-                            @Html.ActionLink("Delete", "Delete", new { id = item.TopsID })
-                        </p>*@
                     </div>
                 </div>
             </div>
@@ -101,12 +86,7 @@
                 <div class="thumbnail">
                     <img src=@Url.Content(item.Photo.Photo1)> @*set alts in id fields?*@
                     <div class="caption">
-                        @*<h3>@Html.DisplayNameFor(model => model.Name) : @Html.DisplayFor(modelItem => item.Name)</h3>*@
                         <p>@Html.ActionLink("Details", "Details", new { id = item.TopsID }, new { @class = "btn btn-primary", role = "button" })</p>
-                        @*<p>
-                            @Html.ActionLink("Edit", "Edit", new { id = item.TopsID }) |
-                            @Html.ActionLink("Delete", "Delete", new { id = item.TopsID })
-                        </p>*@
                     </div>
                 </div>
             </div>
@@ -122,18 +102,13 @@
     @foreach (var item in Model)
     {
 
-        if (item.TopsID >= 19 && item.TopsID <= 25)
+        if (item.TopsID >= 19 && item.TopsID <= 26)
         {
             <div class="col-sm-4 col-md-2">
                 <div class="thumbnail">
                     <img src=@Url.Content(item.Photo.Photo1)> @*set alts in id fields?*@
                     <div class="caption">
-                        @*<h3>@Html.DisplayNameFor(model => model.Name) : @Html.DisplayFor(modelItem => item.Name)</h3>*@
                         <p>@Html.ActionLink("Details", "Details", new { id = item.TopsID }, new { @class = "btn btn-primary", role = "button" })</p>
-                        @*<p>
-                            @Html.ActionLink("Edit", "Edit", new { id = item.TopsID }) 
-                            @Html.ActionLink("Delete", "Delete", new { id = item.TopsID })
-                        </p>*@
                     </div>
                 </div>
             </div>

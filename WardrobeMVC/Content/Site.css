@@ -22,3 +22,39 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/*Home Page*/ 
+
+#cleveland {
+    background-image: url('cleveland.jpg');
+}
+
+.centerText{
+    text-align:center;
+}
+
+/*Tops Section*/
+
+
+
+
+/*Tops Index*/
+
+
+
+
+
+/*Tops Details*/
+
+.detailsHeading{
+    font-family: 'Kaushan Script', cursive;
+    font-size:100px;
+}
+
+.detailsEven{
+    font-family: 'Courgette', cursive;
+}
+
+.detailsOdd{
+    font-family: 'Satisfy', cursive;
+}

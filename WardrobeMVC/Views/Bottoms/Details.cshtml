@@ -4,7 +4,74 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+
+<h1 class="detailsHeading centerText">Bottoms</h1>
+
+<div class="row">
+
+    <div class="col-sm-5 centerText">
+        <hr />
+
+        <h3 class="detailsOdd">@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
+        <h3 class="detailsEven">@Html.DisplayNameFor(model => model.Type): @Html.DisplayFor(model => model.Type)</h3>
+        <h3 class="detailsOdd">Color: @Html.DisplayFor(model => model.Color.Color1)</h3>
+        <h3 class="detailsEven">Occasion: @Html.DisplayFor(model => model.Occasion.Occasion1)</h3>
+        <h3 class="detailsOdd">Season: @Html.DisplayFor(model => model.Season.Season1)</h3>
+
+
+    </div>
+
+    <div class="col-sm-7">
+        @{
+            if (Model.PhotoID == 27)
+            {
+                <img src="~/content/blackshinypants.jpg" />
+            }
+            else if (Model.PhotoID == 28)
+            {
+                <img src="~/Content/blueMenCargoPants.jpg" />
+            }
+            else if (Model.PhotoID == 29)
+            {
+                <img src="~/Content/brownCargoPants.jpg" />
+            }
+            else if (Model.PhotoID == 30)
+            {
+                <img src="~/Content/greenPants.jpg" />
+            }
+            else if (Model.PhotoID == 31)
+            {
+                <img src="~/Content/cardboardPants.jpg" />
+            }
+            if (Model.PhotoID == 32)
+            {
+                <img src="~/Content/keyboardPants.jpg" />
+            }
+            else if (Model.PhotoID == 33)
+            {
+                <img src="~/Content/orangeCapriPants.jpg" />
+            }
+            else if (Model.PhotoID == 34)
+            {
+                <img src="~/Content/blueJeansShorts.jpg" />
+            }
+            else if (Model.PhotoID == 35)
+            {
+                <img src="~/Content/whiteGymShorts.jpg" />
+            }
+
+        }
+
+    </div>
+</div>
+    
+        }
+
+    </div>
+</div>
+
+
+@*<h2>Details</h2>
 
 <div>
     <h4>Bottom</h4>
@@ -63,4 +130,4 @@
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.BottomsID }) |
     @Html.ActionLink("Back to List", "Index")
-</p>
+</p>*@
