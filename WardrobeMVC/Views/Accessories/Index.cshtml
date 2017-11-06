@@ -23,7 +23,7 @@
                 <div class="thumbnail">
                     <img src=@Url.Content(item.Photo.Photo1)> @*set alts in id fields?*@
                     <div class="caption">
-                        <p>@Html.ActionLink("Details", "Details", new { id = item.AccessoriesID }, new { @class = "btn btn-primary", role = "button" })</p>
+                        <p class="detailButton">@Html.ActionLink("Details", "Details", new { id = item.AccessoriesID }, new { @class = "btn btn-primary", role = "button" })</p>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@
                 <div class="thumbnail">
                     <img src=@Url.Content(item.Photo.Photo1)> @*set alts in id fields?*@
                     <div class="caption">
-                        <p>@Html.ActionLink("Details", "Details", new { id = item.AccessoriesID }, new { @class = "btn btn-primary", role = "button" })</p>
+                        <p class="detailButton">@Html.ActionLink("Details", "Details", new { id = item.AccessoriesID }, new { @class = "btn btn-primary", role = "button" })</p>
                     </div>
                 </div>
             </div>
@@ -52,7 +52,7 @@
     }
 </div>
 
-Sunglasses Row One
+@*Sunglasses Row One*@
 
 <h2>Sunglasses</h2>
 
@@ -65,7 +65,7 @@ Sunglasses Row One
                 <div class="thumbnail">
                     <img src=@Url.Content(item.Photo.Photo1)> @*set alts in id fields?*@
                     <div class="caption">
-                        <p>@Html.ActionLink("Details", "Details", new { id = item.AccessoriesID }, new { @class = "btn btn-primary", role = "button" })</p>
+                        <p class="detailButton">@Html.ActionLink("Details", "Details", new { id = item.AccessoriesID }, new { @class = "btn btn-primary", role = "button" })</p>
                     </div>
                 </div>
             </div>

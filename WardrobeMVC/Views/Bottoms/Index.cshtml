@@ -24,7 +24,7 @@
                     <img src=@Url.Content(item.Photo.Photo1)> @*set alts in id fields?*@
                     <div class="caption">
                         @*<h3>@Html.DisplayNameFor(model => model.Name) : @Html.DisplayFor(modelItem => item.Name)</h3>*@
-                        <p>@Html.ActionLink("Details", "Details", new { id = item.BottomsID }, new { @class = "btn btn-primary", role = "button" })</p>
+                        <p class="detailButton">@Html.ActionLink("Details", "Details", new { id = item.BottomsID }, new { @class = "btn btn-primary", role = "button" })</p>
                         @*<p>
                                 @Html.ActionLink("Edit", "Edit", new { id = item.TopsID }) |
                                 @Html.ActionLink("Delete", "Delete", new { id = item.TopsID })
@@ -50,7 +50,7 @@
                     <img src=@Url.Content(item.Photo.Photo1)> @*set alts in id fields?*@
                     <div class="caption">
                         @*<h3>@Html.DisplayNameFor(model => model.Name) : @Html.DisplayFor(modelItem => item.Name)</h3>*@
-                        <p>@Html.ActionLink("Details", "Details", new { id = item.BottomsID }, new { @class = "btn btn-primary", role = "button" })</p>
+                        <p class="detailButton">@Html.ActionLink("Details", "Details", new { id = item.BottomsID }, new { @class = "btn btn-primary", role = "button" })</p>
                         @*<p>
                                 @Html.ActionLink("Edit", "Edit", new { id = item.TopsID }) |
                                 @Html.ActionLink("Delete", "Delete", new { id = item.TopsID })

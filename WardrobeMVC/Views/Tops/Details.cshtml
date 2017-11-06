@@ -24,47 +24,47 @@
         @{
             if (Model.PhotoID == 2)
             {
-                <img src="~/Content/blackTshirtCougar.jpg" />
+                <img class="tShirtReSize" src="~/Content/blackTshirtCougar.jpg" />
             }
             else if (Model.PhotoID == 3)
             {
-                <img src="~/Content/blueTshirt.png" />
+                <img class="tShirtReSize" src="~/Content/blueTshirt.png" />
             }
             else if (Model.PhotoID == 4)
             {
-                <img src="~/Content/blueDcTshirt.jpg" />
+                <img class="tShirtReSize" src="~/Content/blueDcTshirt.jpg" />
             }
             else if (Model.PhotoID == 5)
             {
-                <img src="~/Content/brownLionTshirt.jpg" />
+                <img class="tShirtReSize" src="~/Content/brownLionTshirt.jpg" />
             }
             else if (Model.PhotoID == 6)
             {
-                <img src="~/Content/orangeTshirt.png" />
+                <img class="tShirtReSize" src="~/Content/orangeTshirt.png" />
             }
             if (Model.PhotoID == 7)
             {
-                <img src="~/Content/yellowTshirt.png" />
+                <img class="tShirtReSize" src="~/Content/yellowTshirt.png" />
             }
             else if (Model.PhotoID == 8)
             {
-                <img src="~/Content/redTshirt.png" />
+                <img class="tShirtReSize" src="~/Content/redTshirt.png" />
             }
             else if (Model.PhotoID == 9)
             {
-                <img src="~/Content/purpleTshirt.png" />
+                <img class="tShirtReSize" src="~/Content/purpleTshirt.png" />
             }
             else if (Model.PhotoID == 10)
             {
-                <img src="~/Content/whiteTshirtDaddyCool.jpg" />
+                <img id="cool" src="~/Content/whiteTshirtDaddyCool.jpg" />
             }
             else if (Model.PhotoID == 11)
             {
-                <img src="~/Content/blackUglySweater.jpg" />
+                <img class="squareReSize" src="~/Content/blackUglySweater.jpg" />
             }
             else if (Model.PhotoID == 12)
             {
-                <img src="~/Content/blueRoseHolidaySweater.jpg" />
+                <img class="squareReSize" src="~/Content/blueRoseHolidaySweater.jpg" />
             }
             else if (Model.PhotoID == 13)
             {
@@ -72,61 +72,62 @@
             }
             else if (Model.PhotoID == 14)
             {
-                <img src="~/Content/brownSweater.JPG" />
+                <img class="invertedRectangleReSize" src="~/Content/brownSweater.JPG" />
             }
             else if (Model.PhotoID == 15)
             {
-                <img src="~/Content/greenGolfSweater.jpg" />
+                <img class="squareReSize" src="~/Content/greenGolfSweater.jpg" />
             }
             else if (Model.PhotoID == 16)
             {
-                <img src="~/Content/mixedHolidaySweater.jpg" />
+                <img class="squareReSize" src="~/Content/mixedHolidaySweater.jpg" />
             }
             if (Model.PhotoID == 17)
             {
-                <img src="~/Content/yellowSweater.jpeg" />
+                <img class="rectangleReSize" src="~/Content/yellowSweater.jpeg" />
             }
             else if (Model.PhotoID == 18)
             {
-                <img src="~/Content/redSweaterVest.jpg" />
+                <img class="squareReSize" src="~/Content/redSweaterVest.jpg" />
             }
             else if (Model.PhotoID == 19)
             {
-                <img src="~/Content/whiteHolidaySweater.jpg" />
+                <img class="squareReSize" src="~/Content/whiteHolidaySweater.jpg" />
             }
             else if (Model.PhotoID == 20)
             {
-                <img src="~/Content/blackWinterCoat.jpg" />
+                <img class="invertedRectangleReSize" src="~/Content/blackWinterCoat.jpg" />
             }
             else if (Model.PhotoID == 21)
             {
-                <img src="~/Content/greenThreePieceSuit.jpg" />
+                <img class="invertedRectangleReSize" src="~/Content/greenThreePieceSuit.jpg" />
             }
             else if (Model.PhotoID == 22)
             {
-                <img src="~/Content/yellowFancySuitCoat.jpg" />
+                <img class="invertedRectangleReSize" src="~/Content/yellowFancySuitCoat.jpg" />
             }
             else if (Model.PhotoID == 23)
             {
-                <img src="~/Content/redSuitCoat.jpg" />
+                <img class="invertedRectangleReSize" src="~/Content/redSuitCoat.jpg" />
             }
             else if (Model.PhotoID == 24)
             {
-                <img src="~/Content/purpleSuitCoat.jpg" />
+                <img class="invertedRectangleReSize" src="~/Content/purpleSuitCoat.jpg" />
             }
             else if (Model.PhotoID == 25)
             {
-                <img src="~/Content/whiteCoat.jpg" />
-            }
-            else if (Model.PhotoID == 26)
-            {
-                <img src="~/Content/whiteWaistcoat.jpg" />
+                <img class="invertedRectangleReSize" src="~/Content/whiteCoat.jpg" />
             }
 
         }
 
     </div>
 </div>
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TopsID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
 
     @*<dl class="dl-horizontal">
         <dt>
@@ -182,12 +183,5 @@
                 </dd>
 
             </dl>
-        </div>*@*
+        </div>*@
 
-
-
-
-    <p>
-        @Html.ActionLink("Edit", "Edit", new { id = Model.TopsID }) |
-        @Html.ActionLink("Back to List", "Index")
-    </p>

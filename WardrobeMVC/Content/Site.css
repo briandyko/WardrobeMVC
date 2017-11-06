@@ -23,6 +23,8 @@ textarea {
     max-width: 280px;
 }
 
+
+
 /*Home Page*/ 
 
 #cleveland {
@@ -33,18 +35,26 @@ textarea {
     text-align:center;
 }
 
-/*Tops Section*/
+
+/*Universal Formatting*/
+
+/*Detail Buttons*/
 
 
+.detailButton{
+    text-align:center;
+    color:antiquewhite;
+}
 
+a.btn.btn-primary{
+    background-color:#992600;
+    border-color:black;
+}
 
-/*Tops Index*/
+div.thumbnail{
+    border:0px;
+}
 
-
-
-
-
-/*Tops Details*/
 
 .detailsHeading{
     font-family: 'Kaushan Script', cursive;
@@ -57,4 +67,61 @@ textarea {
 
 .detailsOdd{
     font-family: 'Satisfy', cursive;
+}
+
+.squareReSize{
+    width:380px;
+    height:380px;
+}
+
+.rectangleReSize{
+    width:550px;
+    height:380px;
+}
+
+.invertedRectangleReSize{
+    width:380px;
+    height:550px;
+}
+
+.tabletReSize{
+    width:325px;
+    height:400px;
+}
+
+/*Bottoms*/
+
+img#shiny{
+    width:300px;
+    height:450px;
+}
+
+img#green{
+    width:650px;
+    height:380px;
+}
+
+/*Accessories*/
+
+#casio{
+    width:350px;
+    height:400px;
+}
+
+/*Tops Section*/
+
+/*Tops Index*/
+
+
+/*Tops Details*/
+
+.tShirtReSize{
+    width:400px;
+    height:425px;
+    
+}
+
+img#cool{
+    width:430px;
+    height:525px;
 }

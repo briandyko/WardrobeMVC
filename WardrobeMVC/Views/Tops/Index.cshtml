@@ -23,7 +23,7 @@
         <div class="thumbnail">
             <img src=@Url.Content(item.Photo.Photo1)> @*set alts in id fields?*@
             <div class="caption">
-                <p>@Html.ActionLink("Details", "Details", new { id = item.TopsID }, new { @class = "btn btn-primary", role = "button" })</p>
+                <p class="detailButton">@Html.ActionLink("Details", "Details", new { id = item.TopsID }, new { @class = "btn btn-primary", role = "button" })</p>
             </div>
         </div>
     </div>
@@ -44,7 +44,7 @@
                 <div class="thumbnail">
                     <img src=@Url.Content(item.Photo.Photo1)> @*set alts in id fields?*@
                     <div class="caption">
-                        <p>@Html.ActionLink("Details", "Details", new { id = item.TopsID }, new { @class = "btn btn-primary", role = "button" })</p>
+                        <p class="detailButton">@Html.ActionLink("Details", "Details", new { id = item.TopsID }, new { @class = "btn btn-primary", role = "button" })</p>
                     </div>
                 </div>
             </div>
@@ -66,7 +66,7 @@
                 <div class="thumbnail">
                     <img src=@Url.Content(item.Photo.Photo1)> @*set alts in id fields?*@
                     <div class="caption">
-                        <p>@Html.ActionLink("Details", "Details", new { id = item.TopsID }, new { @class = "btn btn-primary", role = "button" })</p>
+                        <p class="detailButton">@Html.ActionLink("Details", "Details", new { id = item.TopsID }, new { @class = "btn btn-primary", role = "button" })</p>
                     </div>
                 </div>
             </div>
@@ -86,7 +86,7 @@
                 <div class="thumbnail">
                     <img src=@Url.Content(item.Photo.Photo1)> @*set alts in id fields?*@
                     <div class="caption">
-                        <p>@Html.ActionLink("Details", "Details", new { id = item.TopsID }, new { @class = "btn btn-primary", role = "button" })</p>
+                        <p class="detailButton">@Html.ActionLink("Details", "Details", new { id = item.TopsID }, new { @class = "btn btn-primary", role = "button" })</p>
                     </div>
                 </div>
             </div>
@@ -102,13 +102,13 @@
     @foreach (var item in Model)
     {
 
-        if (item.TopsID >= 19 && item.TopsID <= 26)
+        if (item.TopsID >= 19 && item.TopsID <= 24)
         {
             <div class="col-sm-4 col-md-2">
                 <div class="thumbnail">
                     <img src=@Url.Content(item.Photo.Photo1)> @*set alts in id fields?*@
                     <div class="caption">
-                        <p>@Html.ActionLink("Details", "Details", new { id = item.TopsID }, new { @class = "btn btn-primary", role = "button" })</p>
+                        <p class="detailButton">@Html.ActionLink("Details", "Details", new { id = item.TopsID }, new { @class = "btn btn-primary", role = "button" })</p>
                     </div>
                 </div>
             </div>
